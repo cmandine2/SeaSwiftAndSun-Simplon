@@ -6,13 +6,31 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Liste des spots de surf"
+//        self.title = "Liste des spots de surf"
+        
+        // Do any additional setup after loading the view.
+        
+        let hostingController = UIHostingController(rootView: DestinationView())
+        
+        self.addChild(hostingController)
+        self.view.addSubview(hostingController.view)
+        hostingController.didMove(toParent: self)
+        hostingController.view.backgroundColor = UIColor(.gray)
+        
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        hostingController.view.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        hostingController.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        hostingController.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        hostingController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+
     }
 }
 
