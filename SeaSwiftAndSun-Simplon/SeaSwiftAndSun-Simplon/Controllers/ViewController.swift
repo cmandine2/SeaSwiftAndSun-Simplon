@@ -42,13 +42,13 @@ class ViewController: UIViewController {
 		print(error)
 	}
 	
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		if segue.identifier == "toDetails",
-		   let indexPath = sender as? IndexPath,
-		   let destinationVC = segue.destination as? DetailSpotViewController {
-			destinationVC.spotDetails = surfSpots[indexPath.row]
-		}
-	}
+//	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//		if segue.identifier == "toDetails",
+//		   let indexPath = sender as? IndexPath,
+//		   let destinationVC = segue.destination as? DetailSpotViewController {
+//			destinationVC.spotDetails = surfSpots[indexPath.row]
+//		}
+//	}
 }
 
 //MARK: Handle Data source and delegate of tableview
@@ -90,7 +90,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 	
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		performSegue(withIdentifier: "toDetails", sender: indexPath)
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           if let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailSpotViewController") as? DetailSpotViewController {
+               detailVC.spotDetails = surfSpots[indexPath.row]
+               self.navigationController?.pushViewController(detailVC, animated: true)
+           }
 	}
 }
 
