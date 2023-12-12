@@ -67,7 +67,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNj-wn-RKd" userLabel="TitlesView">
                                                     <rect key="frame" x="71.999999999999986" y="0.0" width="218.66666666666663" height="43.666666666666664"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-O7-c6b">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-O7-c6b">
                                                             <rect key="frame" x="8" y="1.6666666666666661" width="210.66666666666666" height="20.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20.329999999999998" id="T52-w9-dRy"/>
@@ -109,9 +109,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="spotImage" destination="iB2-LN-PfI" id="QJo-dL-J9f"/>
-                                            <outlet property="spotName" destination="730-O7-c6b" id="CRu-5k-6vH"/>
-                                            <segue destination="wR1-FD-g1K" kind="show" id="llb-NC-Zl7"/>
+                                            <outlet property="spotDestinationStateCountry" destination="bMt-ub-Ax8" id="Djq-C7-EfN"/>
+                                            <outlet property="spotDifficultyLevel" destination="EPP-oJ-8Ty" id="nkU-3v-0Yv"/>
+                                            <outlet property="spotImage" destination="iB2-LN-PfI" id="Pds-bK-ll5"/>
+                                            <outlet property="spotName" destination="730-O7-c6b" id="9yr-yJ-dvb"/>
+                                            <segue destination="wR1-FD-g1K" kind="show" identifier="toDetails" id="llb-NC-Zl7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -131,6 +133,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qRO-YG-lRL"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ehw-73-G87" id="1yd-WX-sNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +149,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfSpot" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-Ii-O5V">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-Ii-O5V">
                                 <rect key="frame" x="76" y="103" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mfI-Ii-O5V" secondAttribute="height" multiplier="1:1" id="W1Y-qw-cV0"/>
@@ -208,7 +213,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
