@@ -113,7 +113,7 @@
                                             <outlet property="spotImage" destination="iB2-LN-PfI" id="QJo-dL-J9f"/>
                                             <outlet property="spotName" destination="730-O7-c6b" id="CRu-5k-6vH"/>
                                             <outlet property="spotStateCountry" destination="bMt-ub-Ax8" id="2db-uD-BTW"/>
-                                            <segue destination="wR1-FD-g1K" kind="show" id="llb-NC-Zl7"/>
+                                            <segue destination="wR1-FD-g1K" kind="show" identifier="SpotDetails" id="llb-NC-Zl7"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -178,8 +178,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qeC-Fe-I1x"/>
                     <connections>
-                        <outlet property="spotImage" destination="mfI-Ii-O5V" id="mPe-WM-rY2"/>
-                        <outlet property="spotName" destination="zNk-aY-L2q" id="XZ3-CF-wLv"/>
+                        <outlet property="spotImage" destination="mfI-Ii-O5V" id="AvV-rh-V92"/>
+                        <outlet property="spotName" destination="zNk-aY-L2q" id="tz0-1y-kDC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhm-9c-RtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

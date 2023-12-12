@@ -68,8 +68,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpotCell", for: indexPath) as! SpotCell
         cell.setUpCell(spot: spots[indexPath.row])
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SpotDetails" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! DetailSpotViewController
+                let selectedSpot = spots[indexPath.row]
+                controller.selectedSpot = selectedSpot
+                guard let cell: SpotCell = tableView.cellForRow(at: indexPath) as? SpotCell else { return }
+                controller.selectedImage = cell.spotImage.image
+            }
+        
+        }
+    }
 }
+
