@@ -109,8 +109,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="difficultyLevel" destination="EPP-oJ-8Ty" id="CwM-g7-DTq"/>
                                             <outlet property="spotImage" destination="iB2-LN-PfI" id="QJo-dL-J9f"/>
                                             <outlet property="spotName" destination="730-O7-c6b" id="CRu-5k-6vH"/>
+                                            <outlet property="spotStateCountry" destination="bMt-ub-Ax8" id="2db-uD-BTW"/>
                                             <segue destination="wR1-FD-g1K" kind="show" id="llb-NC-Zl7"/>
                                         </connections>
                                     </tableViewCell>
@@ -131,6 +133,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qRO-YG-lRL"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ehw-73-G87" id="dPx-6q-XIW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
