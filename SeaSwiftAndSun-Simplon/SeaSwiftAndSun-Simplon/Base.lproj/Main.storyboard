@@ -150,13 +150,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-Ii-O5V">
-                                <rect key="frame" x="76" y="59" width="240" height="240"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="393"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mfI-Ii-O5V" secondAttribute="height" multiplier="1:1" id="W1Y-qw-cV0"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Wzq-bm-Neb">
-                                <rect key="frame" x="98" y="334" width="197" height="98"/>
+                                <rect key="frame" x="98" y="428" width="197" height="98"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-aY-L2q">
                                         <rect key="frame" x="0.0" y="0.0" width="197" height="32"/>
@@ -167,8 +167,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDb-8q-bBw">
-                                        <rect key="frame" x="48.999999999999993" y="41" width="99.333333333333314" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination/Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDb-8q-bBw">
+                                        <rect key="frame" x="11" y="41" width="175.33333333333334" height="24"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
@@ -192,19 +192,97 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tbK-Oy-UHq" userLabel="Magic Weed View">
+                                <rect key="frame" x="146.66666666666666" y="692.33333333333337" width="100" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-9o-3jF">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="goToURL:" destination="wR1-FD-g1K" eventType="touchUpInside" id="iXU-ph-eY2"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="link" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cze-2W-lV4">
+                                        <rect key="frame" x="75" y="6.9999999999999964" width="25" height="20.666666666666671"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="5vh-zv-SjR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Cze-2W-lV4" secondAttribute="trailing" id="Oyv-1Q-Uvw"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="TI8-mG-8sz" userLabel="Peak Season View">
+                                <rect key="frame" x="101.66666666666667" y="576" width="189.66666666666663" height="58.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peak Season runs from" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwH-Xs-cWN">
+                                        <rect key="frame" x="0.0" y="0.0" width="189.66666666666666" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1B-xt-82I">
+                                        <rect key="frame" x="0.0" y="38.333333333333371" width="189.66666666666666" height="20.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olz-sh-Hq7">
+                                                <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz1-4m-NZA">
+                                                <rect key="frame" x="90.333333333333329" y="0.0" width="15.333333333333329" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiQ-MU-Qfo">
+                                                <rect key="frame" x="122.66666666666669" y="0.0" width="67" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="t1B-xt-82I" firstAttribute="top" secondItem="QwH-Xs-cWN" secondAttribute="bottom" constant="4" id="IbC-g3-faj"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="37B-wj-XJD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="37B-wj-XJD" firstAttribute="trailing" secondItem="mfI-Ii-O5V" secondAttribute="trailing" constant="77" id="7PO-B8-JqS"/>
-                            <constraint firstItem="mfI-Ii-O5V" firstAttribute="leading" secondItem="37B-wj-XJD" secondAttribute="leading" constant="76" id="BNE-07-3md"/>
+                            <constraint firstItem="QwH-Xs-cWN" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="102-Zt-RYd"/>
+                            <constraint firstItem="37B-wj-XJD" firstAttribute="trailing" secondItem="mfI-Ii-O5V" secondAttribute="trailing" id="7PO-B8-JqS"/>
+                            <constraint firstItem="mfI-Ii-O5V" firstAttribute="leading" secondItem="37B-wj-XJD" secondAttribute="leading" id="BNE-07-3md"/>
                             <constraint firstItem="Wzq-bm-Neb" firstAttribute="top" secondItem="mfI-Ii-O5V" secondAttribute="bottom" constant="35" id="Glu-Kc-m36"/>
+                            <constraint firstItem="QwH-Xs-cWN" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="GwF-lD-wYf"/>
+                            <constraint firstItem="TI8-mG-8sz" firstAttribute="top" secondItem="Wzq-bm-Neb" secondAttribute="bottom" constant="50" id="Jb5-b2-1q4"/>
+                            <constraint firstItem="QwH-Xs-cWN" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="Ner-PI-zqY"/>
+                            <constraint firstItem="tbK-Oy-UHq" firstAttribute="top" secondItem="TI8-mG-8sz" secondAttribute="bottom" constant="57.666666666666629" id="csn-iS-Mym"/>
+                            <constraint firstItem="tbK-Oy-UHq" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="i6s-JC-cRY"/>
+                            <constraint firstItem="t1B-xt-82I" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="ps6-ml-LFR"/>
+                            <constraint firstItem="TI8-mG-8sz" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="ptg-3K-aOe"/>
                             <constraint firstItem="Wzq-bm-Neb" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="qd8-Ww-Lfr"/>
-                            <constraint firstItem="mfI-Ii-O5V" firstAttribute="top" secondItem="37B-wj-XJD" secondAttribute="top" id="qgL-lo-qnE"/>
+                            <constraint firstItem="mfI-Ii-O5V" firstAttribute="top" secondItem="JLd-Uq-xkk" secondAttribute="top" id="qgL-lo-qnE"/>
+                            <constraint firstItem="TI8-mG-8sz" firstAttribute="centerX" secondItem="37B-wj-XJD" secondAttribute="centerX" id="x3y-KI-euW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qeC-Fe-I1x"/>
                     <connections>
+                        <outlet property="link" destination="tbK-Oy-UHq" id="ujo-N6-Eg7"/>
+                        <outlet property="magicSinkWeedLink" destination="Hf7-9o-3jF" id="P4p-UH-ptZ"/>
+                        <outlet property="peakSeasonEndDate" destination="IiQ-MU-Qfo" id="Z1X-ow-Y6v"/>
+                        <outlet property="peakSeasonLabelOne" destination="QwH-Xs-cWN" id="TkX-6B-631"/>
+                        <outlet property="peakSeasonLabelTwo" destination="Olz-sh-Hq7" id="j6R-TN-eZi"/>
+                        <outlet property="peakSeasonStartDate" destination="Olz-sh-Hq7" id="0HE-d3-CPf"/>
+                        <outlet property="peakSeasonView" destination="TI8-mG-8sz" id="jLu-Gf-IuT"/>
                         <outlet property="spotDestination" destination="yDb-8q-bBw" id="XaT-iE-1GV"/>
                         <outlet property="spotDifficulty" destination="0Ys-cI-oji" id="A6H-Id-KBQ"/>
                         <outlet property="spotImage" destination="mfI-Ii-O5V" id="mPe-WM-rY2"/>
@@ -237,11 +315,15 @@
     </scenes>
     <color key="tintColor" name="AccentColor"/>
     <resources>
+        <image name="link" catalog="system" width="128" height="124"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="surfSpot" width="3861" height="2574"/>
         <namedColor name="AccentColor">
             <color red="0.25098039215686274" green="0.78431372549019607" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
