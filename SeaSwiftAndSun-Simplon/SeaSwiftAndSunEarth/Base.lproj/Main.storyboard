@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeaSwiftAndSunEarth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SpotCell" id="xb5-bA-MBo" customClass="SpotCell" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SpotCell" id="xb5-bA-MBo" customClass="SpotCell" customModule="SeaSwiftAndSunEarth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xb5-bA-MBo" id="GtI-cs-DGT">
@@ -144,7 +144,7 @@
         <!--Detail Spot View Controller-->
         <scene sceneID="hOS-zN-mGs">
             <objects>
-                <viewController id="wR1-FD-g1K" customClass="DetailSpotViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wR1-FD-g1K" customClass="DetailSpotViewController" customModule="SeaSwiftAndSunEarth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JLd-Uq-xkk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,6 +164,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVI-XC-rxF">
+                                <rect key="frame" x="16" y="391" width="361" height="427"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="37B-wj-XJD"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,14 +176,19 @@
                             <constraint firstItem="37B-wj-XJD" firstAttribute="trailing" secondItem="mfI-Ii-O5V" secondAttribute="trailing" constant="77" id="7PO-B8-JqS"/>
                             <constraint firstItem="mfI-Ii-O5V" firstAttribute="leading" secondItem="37B-wj-XJD" secondAttribute="leading" constant="76" id="BNE-07-3md"/>
                             <constraint firstItem="zNk-aY-L2q" firstAttribute="centerX" secondItem="JLd-Uq-xkk" secondAttribute="centerX" id="DVk-x7-Z0Y"/>
+                            <constraint firstItem="FVI-XC-rxF" firstAttribute="leading" secondItem="37B-wj-XJD" secondAttribute="leading" constant="16" id="FSB-Ob-2le"/>
                             <constraint firstItem="zNk-aY-L2q" firstAttribute="top" secondItem="mfI-Ii-O5V" secondAttribute="bottom" constant="8" symbolic="YES" id="FZg-VO-g5s"/>
+                            <constraint firstItem="FVI-XC-rxF" firstAttribute="top" secondItem="zNk-aY-L2q" secondAttribute="bottom" constant="8" id="WGl-bL-ieu"/>
+                            <constraint firstItem="FVI-XC-rxF" firstAttribute="bottom" secondItem="37B-wj-XJD" secondAttribute="bottom" id="gsC-Aq-S5i"/>
+                            <constraint firstItem="37B-wj-XJD" firstAttribute="trailing" secondItem="FVI-XC-rxF" secondAttribute="trailing" constant="16" id="knE-1b-r6w"/>
                             <constraint firstItem="mfI-Ii-O5V" firstAttribute="top" secondItem="37B-wj-XJD" secondAttribute="top" id="qgL-lo-qnE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qeC-Fe-I1x"/>
                     <connections>
-                        <outlet property="spotImage" destination="mfI-Ii-O5V" id="AvV-rh-V92"/>
-                        <outlet property="spotName" destination="zNk-aY-L2q" id="tz0-1y-kDC"/>
+                        <outlet property="detailsView" destination="FVI-XC-rxF" id="ea8-sh-ASt"/>
+                        <outlet property="spotImage" destination="mfI-Ii-O5V" id="q0S-WC-guv"/>
+                        <outlet property="spotName" destination="zNk-aY-L2q" id="rnv-F9-LoZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhm-9c-RtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

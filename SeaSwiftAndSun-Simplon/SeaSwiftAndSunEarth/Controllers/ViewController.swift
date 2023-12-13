@@ -58,25 +58,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
         }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-            let headerView = UIView()
-
-            headerView.accessibilityIdentifier = "SectionHeader"
-
-            return headerView
-        }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SpotDetails",
            let indexPath = self.tableView.indexPathForSelectedRow,
            let controller = segue.destination as? DetailSpotViewController {
-            let selectedSpot = spots[indexPath.row]
-            controller.selectedSpot = selectedSpot
-            
             if let cell = tableView.cellForRow(at: indexPath) as? SpotCell {
                 controller.selectedImage = cell.spotImage.image
+                controller.selectedSpot = cell.spot
             }
         }
     }
-
 }
