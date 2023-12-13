@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Launch screen.png",
+      "filename" : "wave.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Launch screen 1.png",
+      "filename" : "wave 1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Launch screen 2.png",
+      "filename" : "wave 2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
