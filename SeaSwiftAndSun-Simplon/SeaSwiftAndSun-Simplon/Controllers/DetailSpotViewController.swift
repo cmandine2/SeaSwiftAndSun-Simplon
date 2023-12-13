@@ -10,6 +10,8 @@ import UIKit
 class DetailSpotViewController: UIViewController {
     @IBOutlet weak var spotImage: UIImageView!
     @IBOutlet weak var spotName: UILabel!
+    @IBOutlet weak var spotDestination: UILabel!
+    @IBOutlet weak var spotDifficulty: UILabel!
     var spotDetails: SurfSpotFields?
     
     override func viewDidLoad() {
