@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4201DA6A2B1F686B002A203E"
-               BuildableName = "SeaSwiftAndSun-Simplon.app"
-               BlueprintName = "SeaSwiftAndSun-Simplon"
-               ReferencedContainer = "container:SeaSwiftAndSun-Simplon.xcodeproj">
+               BuildableName = "SeaSwiftAndSunEarth.app"
+               BlueprintName = "SeaSwiftAndSunEarth"
+               ReferencedContainer = "container:SeaSwiftAndSunEarth.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EF9940B72B29A4AF00FA02CE"
-               BuildableName = "SeaSwiftAndSun-SimplonTests.xctest"
-               BlueprintName = "SeaSwiftAndSun-SimplonTests"
-               ReferencedContainer = "container:SeaSwiftAndSun-Simplon.xcodeproj">
+               BuildableName = "SeaSwiftAndSunEarthTests.xctest"
+               BlueprintName = "SeaSwiftAndSunEarthTests"
+               ReferencedContainer = "container:SeaSwiftAndSunEarth.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EF9940C52B29A50300FA02CE"
-               BuildableName = "SeaSwiftAndSun-SimplonUITests.xctest"
-               BlueprintName = "SeaSwiftAndSun-SimplonUITests"
-               ReferencedContainer = "container:SeaSwiftAndSun-Simplon.xcodeproj">
+               BuildableName = "SeaSwiftAndSunEarthUITests.xctest"
+               BlueprintName = "SeaSwiftAndSunEarthUITests"
+               ReferencedContainer = "container:SeaSwiftAndSunEarth.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4201DA6A2B1F686B002A203E"
-            BuildableName = "SeaSwiftAndSun-Simplon.app"
-            BlueprintName = "SeaSwiftAndSun-Simplon"
-            ReferencedContainer = "container:SeaSwiftAndSun-Simplon.xcodeproj">
+            BuildableName = "SeaSwiftAndSunEarth.app"
+            BlueprintName = "SeaSwiftAndSunEarth"
+            ReferencedContainer = "container:SeaSwiftAndSunEarth.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4201DA6A2B1F686B002A203E"
-            BuildableName = "SeaSwiftAndSun-Simplon.app"
-            BlueprintName = "SeaSwiftAndSun-Simplon"
-            ReferencedContainer = "container:SeaSwiftAndSun-Simplon.xcodeproj">
+            BuildableName = "SeaSwiftAndSunEarth.app"
+            BlueprintName = "SeaSwiftAndSunEarth"
+            ReferencedContainer = "container:SeaSwiftAndSunEarth.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
