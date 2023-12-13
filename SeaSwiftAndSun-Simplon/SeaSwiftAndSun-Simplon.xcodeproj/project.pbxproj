@@ -23,6 +23,9 @@
 		EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */; };
 		EF9940C92B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */; };
 		EF9940CB2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */; };
+		EF9940D22B29AD3A00FA02CE /* SpotServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940D12B29AD3A00FA02CE /* SpotServiceTests.swift */; };
+		EF9940D42B29BF7700FA02CE /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940D32B29BF7700FA02CE /* FakeResponseData.swift */; };
+		EF9940D62B29C60700FA02CE /* DataTest.json in Resources */ = {isa = PBXBuildFile; fileRef = EF9940D52B29C60700FA02CE /* DataTest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		EF9940C62B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonUITests.swift; sourceTree = "<group>"; };
 		EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF9940D12B29AD3A00FA02CE /* SpotServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotServiceTests.swift; sourceTree = "<group>"; };
+		EF9940D32B29BF7700FA02CE /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		EF9940D52B29C60700FA02CE /* DataTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DataTest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */,
+				EF9940D12B29AD3A00FA02CE /* SpotServiceTests.swift */,
+				EF9940D32B29BF7700FA02CE /* FakeResponseData.swift */,
+				EF9940D52B29C60700FA02CE /* DataTest.json */,
 			);
 			path = "SeaSwiftAndSun-SimplonTests";
 			sourceTree = "<group>";
@@ -294,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9940D62B29C60700FA02CE /* DataTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */,
+				EF9940D22B29AD3A00FA02CE /* SpotServiceTests.swift in Sources */,
+				EF9940D42B29BF7700FA02CE /* FakeResponseData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
