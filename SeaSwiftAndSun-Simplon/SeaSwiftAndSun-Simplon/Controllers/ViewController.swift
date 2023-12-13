@@ -11,6 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         getSpot()
         self.title = "Surf Spots"
+        self.navigationController?.navigationBar.accessibilityIdentifier = "SurfSpotsNavigationBar"
     }
     func getSpot() {
         SpotService.shared.getSpot { error, destination in
