@@ -20,7 +20,27 @@
 		EF7FBE222B2865DA008BB45F /* Error Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE212B2865DA008BB45F /* Error Manager.swift */; };
 		EF7FBE242B286861008BB45F /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE232B286861008BB45F /* DestinationView.swift */; };
 		EF7FBE262B28697B008BB45F /* ViewModelDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE252B28697B008BB45F /* ViewModelDestination.swift */; };
+		EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */; };
+		EF9940C92B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */; };
+		EF9940CB2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF9940BC2B29A4B000FA02CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4201DA632B1F686B002A203E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4201DA6A2B1F686B002A203E;
+			remoteInfo = "SeaSwiftAndSun-Simplon";
+		};
+		EF9940CC2B29A50300FA02CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4201DA632B1F686B002A203E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4201DA6A2B1F686B002A203E;
+			remoteInfo = "SeaSwiftAndSun-Simplon";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeaSwiftAndSun-Simplon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +58,29 @@
 		EF7FBE212B2865DA008BB45F /* Error Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error Manager.swift"; sourceTree = "<group>"; };
 		EF7FBE232B286861008BB45F /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
 		EF7FBE252B28697B008BB45F /* ViewModelDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDestination.swift; sourceTree = "<group>"; };
+		EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSun-SimplonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonTests.swift; sourceTree = "<group>"; };
+		EF9940C62B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonUITests.swift; sourceTree = "<group>"; };
+		EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4201DA682B1F686B002A203E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9940B52B29A4AF00FA02CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9940C32B29A50300FA02CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				EF9940B92B29A4B000FA02CE /* SeaSwiftAndSun-SimplonTests */,
+				EF9940C72B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests */,
 				4201DA6C2B1F686B002A203E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */,
+				EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSun-SimplonTests.xctest */,
+				EF9940C62B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +163,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EF9940B92B29A4B000FA02CE /* SeaSwiftAndSun-SimplonTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */,
+			);
+			path = "SeaSwiftAndSun-SimplonTests";
+			sourceTree = "<group>";
+		};
+		EF9940C72B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */,
+				EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */,
+			);
+			path = "SeaSwiftAndSun-SimplonUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +200,42 @@
 			productReference = 4201DA6B2B1F686B002A203E /* SeaSwiftAndSun-Simplon.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EF9940B72B29A4AF00FA02CE /* SeaSwiftAndSun-SimplonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9940C02B29A4B000FA02CE /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonTests" */;
+			buildPhases = (
+				EF9940B42B29A4AF00FA02CE /* Sources */,
+				EF9940B52B29A4AF00FA02CE /* Frameworks */,
+				EF9940B62B29A4AF00FA02CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9940BD2B29A4B000FA02CE /* PBXTargetDependency */,
+			);
+			name = "SeaSwiftAndSun-SimplonTests";
+			productName = "SeaSwiftAndSun-SimplonTests";
+			productReference = EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSun-SimplonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF9940C52B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF9940CE2B29A50300FA02CE /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonUITests" */;
+			buildPhases = (
+				EF9940C22B29A50300FA02CE /* Sources */,
+				EF9940C32B29A50300FA02CE /* Frameworks */,
+				EF9940C42B29A50300FA02CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF9940CD2B29A50300FA02CE /* PBXTargetDependency */,
+			);
+			name = "SeaSwiftAndSun-SimplonUITests";
+			productName = "SeaSwiftAndSun-SimplonUITests";
+			productReference = EF9940C62B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +248,14 @@
 				TargetAttributes = {
 					4201DA6A2B1F686B002A203E = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					EF9940B72B29A4AF00FA02CE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 4201DA6A2B1F686B002A203E;
+					};
+					EF9940C52B29A50300FA02CE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 4201DA6A2B1F686B002A203E;
 					};
 				};
 			};
@@ -169,6 +273,8 @@
 			projectRoot = "";
 			targets = (
 				4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
+				EF9940B72B29A4AF00FA02CE /* SeaSwiftAndSun-SimplonTests */,
+				EF9940C52B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +287,20 @@
 				4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */,
 				4201DA782B1F686E002A203E /* Assets.xcassets in Resources */,
 				4201DA762B1F686B002A203E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9940B62B29A4AF00FA02CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9940C42B29A50300FA02CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +324,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF9940B42B29A4AF00FA02CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9940C22B29A50300FA02CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9940CB2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift in Sources */,
+				EF9940C92B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF9940BD2B29A4B000FA02CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */;
+			targetProxy = EF9940BC2B29A4B000FA02CE /* PBXContainerItemProxy */;
+		};
+		EF9940CD2B29A50300FA02CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4201DA6A2B1F686B002A203E /* SeaSwiftAndSun-Simplon */;
+			targetProxy = EF9940CC2B29A50300FA02CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4201DA742B1F686B002A203E /* Main.storyboard */ = {
@@ -405,6 +555,76 @@
 			};
 			name = Release;
 		};
+		EF9940BE2B29A4B000FA02CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBRLBN5H2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaSwiftAndSun-Simplon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaSwiftAndSun-Simplon";
+			};
+			name = Debug;
+		};
+		EF9940BF2B29A4B000FA02CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBRLBN5H2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeaSwiftAndSun-Simplon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SeaSwiftAndSun-Simplon";
+			};
+			name = Release;
+		};
+		EF9940CF2B29A50300FA02CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBRLBN5H2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SeaSwiftAndSun-Simplon";
+			};
+			name = Debug;
+		};
+		EF9940D02B29A50300FA02CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TBRLBN5H2K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keyhanmortezaeifar.SeaSwiftAndSun-SimplonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SeaSwiftAndSun-Simplon";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +642,24 @@
 			buildConfigurations = (
 				4201DA802B1F686E002A203E /* Debug */,
 				4201DA812B1F686E002A203E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9940C02B29A4B000FA02CE /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9940BE2B29A4B000FA02CE /* Debug */,
+				EF9940BF2B29A4B000FA02CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF9940CE2B29A50300FA02CE /* Build configuration list for PBXNativeTarget "SeaSwiftAndSun-SimplonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9940CF2B29A50300FA02CE /* Debug */,
+				EF9940D02B29A50300FA02CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

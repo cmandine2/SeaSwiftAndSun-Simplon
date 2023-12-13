@@ -10,7 +10,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         getSpot()
-        self.title = "Liste des spots de surf"
+        self.title = "Surf Spots"
     }
     func getSpot() {
         SpotService.shared.getSpot { error, destination in
