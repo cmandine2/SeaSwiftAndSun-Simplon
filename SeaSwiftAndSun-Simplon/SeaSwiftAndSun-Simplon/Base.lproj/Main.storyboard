@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zm5-YI-dfj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zm5-YI-dfj">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -67,7 +67,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNj-wn-RKd" userLabel="TitlesView">
                                                     <rect key="frame" x="71.999999999999986" y="0.0" width="218.66666666666663" height="43.666666666666664"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-O7-c6b">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-O7-c6b">
                                                             <rect key="frame" x="8" y="1.6666666666666661" width="210.66666666666666" height="20.333333333333336"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20.329999999999998" id="T52-w9-dRy"/>
@@ -109,9 +109,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="spotImage" destination="iB2-LN-PfI" id="QJo-dL-J9f"/>
-                                            <outlet property="spotName" destination="730-O7-c6b" id="CRu-5k-6vH"/>
-                                            <segue destination="wR1-FD-g1K" kind="show" id="llb-NC-Zl7"/>
+                                            <outlet property="spotDestinationStateCountry" destination="bMt-ub-Ax8" id="Djq-C7-EfN"/>
+                                            <outlet property="spotDifficultyLevel" destination="EPP-oJ-8Ty" id="nkU-3v-0Yv"/>
+                                            <outlet property="spotImage" destination="iB2-LN-PfI" id="Pds-bK-ll5"/>
+                                            <outlet property="spotName" destination="730-O7-c6b" id="9yr-yJ-dvb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -131,6 +132,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qRO-YG-lRL"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ehw-73-G87" id="1yd-WX-sNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,19 +143,19 @@
         <!--Detail Spot View Controller-->
         <scene sceneID="hOS-zN-mGs">
             <objects>
-                <viewController id="wR1-FD-g1K" customClass="DetailSpotViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailSpotViewController" id="wR1-FD-g1K" customClass="DetailSpotViewController" customModule="SeaSwiftAndSun_Simplon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JLd-Uq-xkk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfSpot" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-Ii-O5V">
-                                <rect key="frame" x="76" y="103" width="240" height="240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfI-Ii-O5V">
+                                <rect key="frame" x="76" y="59" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mfI-Ii-O5V" secondAttribute="height" multiplier="1:1" id="W1Y-qw-cV0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rockaway Beach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNk-aY-L2q">
-                                <rect key="frame" x="76.666666666666686" y="351" width="240" height="32"/>
+                                <rect key="frame" x="76.666666666666686" y="307" width="240" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="vbd-1p-8fD"/>
                                 </constraints>
