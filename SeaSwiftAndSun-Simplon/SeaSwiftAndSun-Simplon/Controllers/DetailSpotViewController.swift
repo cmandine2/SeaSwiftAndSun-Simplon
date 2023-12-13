@@ -14,9 +14,7 @@ class DetailSpotViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("details loaded")
         self.setUpUI()
-        print("details set up")
     }
     
     func setUpUI() {

@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import CoreLocation
 
 class ViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
@@ -27,7 +28,13 @@ class ViewController: UIViewController {
 			DispatchQueue.main.async {
 				switch result {
 					case .success(let surfSpotResponse):
-						self?.surfSpots = surfSpotResponse.records.map { $0.fields }
+						self?.surfSpots = surfSpotResponse.records.compactMap { record -> SurfSpotFields? in
+							var spot = record.fields
+							if let coordinateString = spot.coordinates {
+								spot.parsedCoor = self?.parseCoordinates(from: coordinateString)
+							}
+							return spot
+						}
 						self?.updateUI()
 					case .failure(let error):
 						print("failure test")
@@ -46,7 +53,16 @@ class ViewController: UIViewController {
 		NSLayoutConstraint.activate([
 			segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
 			segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
-			segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8)
+			segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
+			segmentedControl.heightAnchor.constraint(greaterThanOrEqualToConstant: 30)
+		])
+		
+		tableView.translatesAutoresizingMaskIntoConstraints = false
+		NSLayoutConstraint.activate([
+			tableView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 8),
+			tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+			tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+			tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 		])
 	}
 	
@@ -54,6 +70,8 @@ class ViewController: UIViewController {
 		switch sender.selectedSegmentIndex {
 			case 0:
 				tableView.isHidden = false
+				mapViewController?.view.removeFromSuperview()
+				mapViewController = nil
 			case 1:
 				tableView.isHidden = true
 				presentMapView()
@@ -68,7 +86,7 @@ class ViewController: UIViewController {
 			return
 		}
 		
-		let hostingController = UIHostingController(rootView: MapView())
+		let hostingController = UIHostingController(rootView: MapView(allSpots: surfSpots))
 		self.mapViewController = hostingController
 		
 		addChild(hostingController)
@@ -82,6 +100,16 @@ class ViewController: UIViewController {
 			hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
 			hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
 		])
+	}
+	
+	func parseCoordinates(from string: String) -> CLLocationCoordinate2D? {
+		let components = string.split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces) }
+		if components.count == 2,
+		   let latitude = Double(components[0]),
+		   let longitude = Double(components[1]) {
+			return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+		}
+		return nil
 	}
 	
 	private func updateUI() {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct SurfSpotResponse: Codable {
 	let records: [SurfSpotRecord]
@@ -22,6 +23,7 @@ struct SurfSpotRecord: Codable {
 }
 
 struct SurfSpotFields: Codable {
+	let id = UUID()
 	let peakSurfSeasonBegins: String
 	let destinationStateCountry: String
 	let peakSurfSeasonEnds: String
@@ -32,6 +34,8 @@ struct SurfSpotFields: Codable {
 	let difficultyLevel: Int
 	let destination: String
 	let travellers: [String]?
+	let coordinates: String?
+	var parsedCoor: CLLocationCoordinate2D?
 	let address: String?
 	
 	enum CodingKeys: String, CodingKey {
@@ -45,6 +49,7 @@ struct SurfSpotFields: Codable {
 		case difficultyLevel = "Difficulty Level"
 		case destination = "Destination"
 		case travellers = "Travellers"
+		case coordinates = "Coordinates"
 		case address = "Address"
 	}
 }

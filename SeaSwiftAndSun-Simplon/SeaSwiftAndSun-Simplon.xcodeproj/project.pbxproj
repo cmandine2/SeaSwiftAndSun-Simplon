@@ -17,7 +17,7 @@
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
 		C896723D2B276AF6004D489C /* AirtableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896723C2B276AF6004D489C /* AirtableData.swift */; };
 		C89672402B276B98004D489C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896723F2B276B98004D489C /* NetworkManager.swift */; };
-		C89672442B29BCC3004D489C /* SwiftUIContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672432B29BCC3004D489C /* SwiftUIContainerView.swift */; };
+		C89672442B29BCC3004D489C /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672432B29BCC3004D489C /* FinalView.swift */; };
 		C89672462B29BCC8004D489C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672452B29BCC8004D489C /* MapView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
 		C896723C2B276AF6004D489C /* AirtableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableData.swift; sourceTree = "<group>"; };
 		C896723F2B276B98004D489C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		C89672432B29BCC3004D489C /* SwiftUIContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIContainerView.swift; sourceTree = "<group>"; };
+		C89672432B29BCC3004D489C /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 		C89672452B29BCC8004D489C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4201DA822B1F6C28002A203E /* SpotCell.swift */,
-				C89672432B29BCC3004D489C /* SwiftUIContainerView.swift */,
+				C89672432B29BCC3004D489C /* FinalView.swift */,
 				C89672452B29BCC8004D489C /* MapView.swift */,
 			);
 			path = Views;
@@ -186,7 +186,7 @@
 				C89672402B276B98004D489C /* NetworkManager.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				C896723D2B276AF6004D489C /* AirtableData.swift in Sources */,
-				C89672442B29BCC3004D489C /* SwiftUIContainerView.swift in Sources */,
+				C89672442B29BCC3004D489C /* FinalView.swift in Sources */,
 				C89672462B29BCC8004D489C /* MapView.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
 			);

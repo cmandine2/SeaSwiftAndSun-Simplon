@@ -33,7 +33,6 @@ class NetworkManager {
 			
 			do {
 				let surfSpotResponse = try JSONDecoder().decode(SurfSpotResponse.self, from: data)
-//				print("surfSpotResponse : \(surfSpotResponse)")
 				completion(.success(surfSpotResponse))
 			} catch {
 				print("Decoding error: \(error)")
