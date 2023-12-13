@@ -24,7 +24,7 @@ class DetailSpotViewController: UIViewController {
             if let photos = details.photos {
                 if let thumbnailUrl = photos.first?.url,
                    let url = URL(string: thumbnailUrl) {
-                    if let spotImage = self.spotImage {
+					if self.spotImage != nil {
                         self.spotImage.load(url: url)
                         self.spotImage.layer.cornerRadius = self.spotImage.frame.size.width / 2
                     }

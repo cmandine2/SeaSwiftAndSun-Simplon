@@ -6,16 +6,20 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 	@IBOutlet weak var tableView: UITableView!
 	var surfSpots: [SurfSpotFields] = []
+	let segmentedControl = UISegmentedControl(items: ["List", "Map"])
+	private var mapViewController: UIHostingController<MapView>? 
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		tableView.delegate = self
 		tableView.dataSource = self
 		loadSurfSpotsData()
+		setupSegmentedControl()
 	}
 	
 	private func loadSurfSpotsData() {
@@ -23,7 +27,6 @@ class ViewController: UIViewController {
 			DispatchQueue.main.async {
 				switch result {
 					case .success(let surfSpotResponse):
-//						print("success test")
 						self?.surfSpots = surfSpotResponse.records.map { $0.fields }
 						self?.updateUI()
 					case .failure(let error):
@@ -34,6 +37,53 @@ class ViewController: UIViewController {
 		}
 	}
 	
+	private func setupSegmentedControl() {
+		segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
+		segmentedControl.selectedSegmentIndex = 0
+		view.addSubview(segmentedControl)
+		
+		segmentedControl.translatesAutoresizingMaskIntoConstraints = false
+		NSLayoutConstraint.activate([
+			segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
+			segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+			segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8)
+		])
+	}
+	
+	@objc func segmentChanged(_ sender: UISegmentedControl) {
+		switch sender.selectedSegmentIndex {
+			case 0:
+				tableView.isHidden = false
+			case 1:
+				tableView.isHidden = true
+				presentMapView()
+			default:
+				break
+		}
+	}
+	
+	
+	private func presentMapView() {
+		if mapViewController != nil {
+			return
+		}
+		
+		let hostingController = UIHostingController(rootView: MapView())
+		self.mapViewController = hostingController
+		
+		addChild(hostingController)
+		view.addSubview(hostingController.view)
+		hostingController.didMove(toParent: self)
+		
+		hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+		NSLayoutConstraint.activate([
+			hostingController.view.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 8),
+			hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+			hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+			hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+		])
+	}
+	
 	private func updateUI() {
 		tableView.reloadData()
 	}
@@ -41,14 +91,6 @@ class ViewController: UIViewController {
 	private func handleError(_ error: Error) {
 		print(error)
 	}
-	
-//	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//		if segue.identifier == "toDetails",
-//		   let indexPath = sender as? IndexPath,
-//		   let destinationVC = segue.destination as? DetailSpotViewController {
-//			destinationVC.spotDetails = surfSpots[indexPath.row]
-//		}
-//	}
 }
 
 //MARK: Handle Data source and delegate of tableview
