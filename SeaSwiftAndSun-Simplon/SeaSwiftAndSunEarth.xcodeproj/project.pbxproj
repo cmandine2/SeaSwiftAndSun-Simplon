@@ -20,7 +20,6 @@
 		DCA430942B29B48B005CE637 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
 		EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
 		EF7FBE202B286516008BB45F /* API Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1F2B286516008BB45F /* API Manager.swift */; };
-		EF7FBE222B2865DA008BB45F /* Error Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE212B2865DA008BB45F /* Error Manager.swift */; };
 		EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */; };
 		EF9940C92B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */; };
 		EF9940CB2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */; };
@@ -60,7 +59,6 @@
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
 		EF7FBE1A2B285E8D008BB45F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EF7FBE1F2B286516008BB45F /* API Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Manager.swift"; sourceTree = "<group>"; };
-		EF7FBE212B2865DA008BB45F /* Error Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error Manager.swift"; sourceTree = "<group>"; };
 		EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSunEarthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeaSwiftAndSunEarthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonTests.swift; sourceTree = "<group>"; };
 		EF9940C62B29A50300FA02CE /* SeaSwiftAndSunEarthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeaSwiftAndSunEarthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				EF7FBE1F2B286516008BB45F /* API Manager.swift */,
-				EF7FBE212B2865DA008BB45F /* Error Manager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
-				EF7FBE222B2865DA008BB45F /* Error Manager.swift in Sources */,
 				EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
