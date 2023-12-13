@@ -16,6 +16,8 @@
 		4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201DA792B1F686E002A203E /* LaunchScreen.storyboard */; };
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
+		DCA430922B29AE26005CE637 /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
+		DCA430942B29B48B005CE637 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
 		EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
 		EF7FBE202B286516008BB45F /* API Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1F2B286516008BB45F /* API Manager.swift */; };
 		EF7FBE222B2865DA008BB45F /* Error Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE212B2865DA008BB45F /* Error Manager.swift */; };
@@ -333,7 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA430942B29B48B005CE637 /* Model.swift in Sources */,
 				EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */,
+				DCA430922B29AE26005CE637 /* SpotCell.swift in Sources */,
 				EF9940D22B29AD3A00FA02CE /* SpotServiceTests.swift in Sources */,
 				EF9940D42B29BF7700FA02CE /* FakeResponseData.swift in Sources */,
 			);
