@@ -35,6 +35,8 @@ class DetailSpotViewController: UIViewController {
                 }
             }
             self.spotName.text = details.destination
+            self.spotDestination.text = details.destinationStateCountry
+            self.spotDifficulty.text = String(details.difficultyLevel)
         }
     }
 }

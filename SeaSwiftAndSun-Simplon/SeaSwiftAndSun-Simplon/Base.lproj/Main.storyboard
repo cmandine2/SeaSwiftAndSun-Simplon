@@ -189,15 +189,8 @@
                                                 </constraints>
                                             </imageView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="0Ys-cI-oji" firstAttribute="top" secondItem="u8J-9v-IGs" secondAttribute="top" constant="8" id="uuC-Ka-OC7"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="yDb-8q-bBw" firstAttribute="top" secondItem="zNk-aY-L2q" secondAttribute="bottom" constant="8" id="9gc-kz-PgA"/>
-                                    <constraint firstItem="u8J-9v-IGs" firstAttribute="top" secondItem="yDb-8q-bBw" secondAttribute="bottom" constant="8" id="WcX-Y6-nYz"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="37B-wj-XJD"/>
