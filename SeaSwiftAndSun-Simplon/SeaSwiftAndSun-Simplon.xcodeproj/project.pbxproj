@@ -19,8 +19,6 @@
 		EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1A2B285E8D008BB45F /* Model.swift */; };
 		EF7FBE202B286516008BB45F /* API Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE1F2B286516008BB45F /* API Manager.swift */; };
 		EF7FBE222B2865DA008BB45F /* Error Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE212B2865DA008BB45F /* Error Manager.swift */; };
-		EF7FBE242B286861008BB45F /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE232B286861008BB45F /* DestinationView.swift */; };
-		EF7FBE262B28697B008BB45F /* ViewModelDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7FBE252B28697B008BB45F /* ViewModelDestination.swift */; };
 		EF9940BB2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */; };
 		EF9940C92B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940C82B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITests.swift */; };
 		EF9940CB2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9940CA2B29A50300FA02CE /* SeaSwiftAndSun_SimplonUITestsLaunchTests.swift */; };
@@ -58,8 +56,6 @@
 		EF7FBE1A2B285E8D008BB45F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EF7FBE1F2B286516008BB45F /* API Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Manager.swift"; sourceTree = "<group>"; };
 		EF7FBE212B2865DA008BB45F /* Error Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error Manager.swift"; sourceTree = "<group>"; };
-		EF7FBE232B286861008BB45F /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
-		EF7FBE252B28697B008BB45F /* ViewModelDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDestination.swift; sourceTree = "<group>"; };
 		EF9940B82B29A4AF00FA02CE /* SeaSwiftAndSun-SimplonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9940BA2B29A4B000FA02CE /* SeaSwiftAndSun_SimplonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaSwiftAndSun_SimplonTests.swift; sourceTree = "<group>"; };
 		EF9940C62B29A50300FA02CE /* SeaSwiftAndSun-SimplonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SeaSwiftAndSun-SimplonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				4201DA822B1F6C28002A203E /* SpotCell.swift */,
-				EF7FBE232B286861008BB45F /* DestinationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,7 +147,6 @@
 			children = (
 				EF7FBE1F2B286516008BB45F /* API Manager.swift */,
 				EF7FBE212B2865DA008BB45F /* Error Manager.swift */,
-				EF7FBE252B28697B008BB45F /* ViewModelDestination.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -314,14 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7FBE242B286861008BB45F /* DestinationView.swift in Sources */,
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
 				EF7FBE222B2865DA008BB45F /* Error Manager.swift in Sources */,
 				EF7FBE1B2B285E8D008BB45F /* Model.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
-				EF7FBE262B28697B008BB45F /* ViewModelDestination.swift in Sources */,
 				4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */,
 				EF7FBE202B286516008BB45F /* API Manager.swift in Sources */,
 			);

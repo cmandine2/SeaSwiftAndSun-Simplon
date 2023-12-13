@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         getSpot()
         self.title = "Surf Spots"
         self.navigationController?.navigationBar.accessibilityIdentifier = "SurfSpotsNavigationBar"
+        
+        self.tableView.accessibilityIdentifier = "SurfSpotsTableView"
     }
     func getSpot() {
         SpotService.shared.getSpot { error, destination in
@@ -45,13 +47,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SpotCell", for: indexPath) as! SpotCell
-        let surfBreak = surfBreakSections[indexPath.section]
-        if let spotsInSection = spotsBySurfBreak[surfBreak] {
-            cell.setUpCell(spot: spotsInSection[indexPath.row])
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SpotCell", for: indexPath) as! SpotCell
+            let surfBreak = surfBreakSections[indexPath.section]
+            if let spotsInSection = spotsBySurfBreak[surfBreak] {
+                cell.setUpCell(spot: spotsInSection[indexPath.row])
+            }
+
+            cell.accessibilityIdentifier = "SpotCell"
+
+            return cell
         }
-        return cell
-    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let headerView = UIView()
+
+            headerView.accessibilityIdentifier = "SectionHeader"
+
+            return headerView
+        }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SpotDetails",
