@@ -22,7 +22,7 @@ struct SurfSpotRecord: Codable {
 	let fields: SurfSpotFields
 }
 
-struct SurfSpotFields: Codable {
+struct SurfSpotFields: Codable, Hashable {
 	let id = UUID()
 	let peakSurfSeasonBegins: String
 	let destinationStateCountry: String
@@ -51,6 +51,19 @@ struct SurfSpotFields: Codable {
 		case travellers = "Travellers"
 		case coordinates = "Coordinates"
 		case address = "Address"
+	}
+	
+	func hash(into hasher: inout Hasher) {
+		hasher.combine(id)
+		hasher.combine(destination)
+		if let parsedCoor = parsedCoor {
+			hasher.combine(parsedCoor.latitude)
+			hasher.combine(parsedCoor.longitude)
+		}
+	}
+	
+	static func == (lhs: SurfSpotFields, rhs: SurfSpotFields) -> Bool {
+		lhs.id == rhs.id
 	}
 }
 
