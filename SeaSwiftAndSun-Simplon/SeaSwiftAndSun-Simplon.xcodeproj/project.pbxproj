@@ -16,6 +16,8 @@
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
 		C8733F812B2B08690075DFC6 /* SelectedSpotMapInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8733F802B2B08690075DFC6 /* SelectedSpotMapInfoView.swift */; };
+		C89151492B2B3ED200BAA33F /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89151482B2B3ED200BAA33F /* DetailsView.swift */; };
+		C891514C2B2B636C00BAA33F /* WeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C891514B2B2B636C00BAA33F /* WeatherKit.framework */; };
 		C896723D2B276AF6004D489C /* AirtableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896723C2B276AF6004D489C /* AirtableData.swift */; };
 		C89672402B276B98004D489C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896723F2B276B98004D489C /* NetworkManager.swift */; };
 		C89672442B29BCC3004D489C /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672432B29BCC3004D489C /* FinalView.swift */; };
@@ -34,6 +36,8 @@
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
 		C8733F802B2B08690075DFC6 /* SelectedSpotMapInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSpotMapInfoView.swift; sourceTree = "<group>"; };
+		C89151482B2B3ED200BAA33F /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		C891514B2B2B636C00BAA33F /* WeatherKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WeatherKit.framework; path = System/Library/Frameworks/WeatherKit.framework; sourceTree = SDKROOT; };
 		C896723C2B276AF6004D489C /* AirtableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableData.swift; sourceTree = "<group>"; };
 		C896723F2B276B98004D489C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C89672432B29BCC3004D489C /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C891514C2B2B636C00BAA33F /* WeatherKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 			children = (
 				4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */,
 				4201DA6C2B1F686B002A203E /* Products */,
+				C891514A2B2B636800BAA33F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +106,17 @@
 				C89672432B29BCC3004D489C /* FinalView.swift */,
 				C89672452B29BCC8004D489C /* MapView.swift */,
 				C8733F802B2B08690075DFC6 /* SelectedSpotMapInfoView.swift */,
+				C89151482B2B3ED200BAA33F /* DetailsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C891514A2B2B636800BAA33F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C891514B2B2B636C00BAA33F /* WeatherKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C896723B2B276AE0004D489C /* Model */ = {
@@ -189,6 +204,7 @@
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
 				C89672402B276B98004D489C /* NetworkManager.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
+				C89151492B2B3ED200BAA33F /* DetailsView.swift in Sources */,
 				C896723D2B276AF6004D489C /* AirtableData.swift in Sources */,
 				C89672442B29BCC3004D489C /* FinalView.swift in Sources */,
 				C89672462B29BCC8004D489C /* MapView.swift in Sources */,

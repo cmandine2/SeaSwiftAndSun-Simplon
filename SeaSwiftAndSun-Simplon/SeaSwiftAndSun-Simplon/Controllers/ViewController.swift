@@ -162,7 +162,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            let storyboard = UIStoryboard(name: "Main", bundle: nil)
            if let detailVC = storyboard.instantiateViewController(withIdentifier: "DetailSpotViewController") as? DetailSpotViewController {
-               detailVC.spotDetails = surfSpots[indexPath.row]
+               detailVC.spot = surfSpots[indexPath.row]
                self.navigationController?.pushViewController(detailVC, animated: true)
            }
 	}
