@@ -35,7 +35,7 @@
 //}
 
 import XCTest
-@testable import SeaSwiftAndSun_Simplon
+@testable import SeaSwiftAndSunEarth
 
 class SpotServiceTests: XCTestCase {
     

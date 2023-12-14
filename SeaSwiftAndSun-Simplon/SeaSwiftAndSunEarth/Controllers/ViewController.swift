@@ -1,12 +1,13 @@
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var spots: [Spot] = []
     var surfBreakSections: [String] = []
     var spotsBySurfBreak: [String: [Spot]] = [:]
-
+    
     @IBOutlet weak var tableView: UITableView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getSpot()
