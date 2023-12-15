@@ -15,6 +15,9 @@
 		4201DA7B2B1F686E002A203E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4201DA792B1F686E002A203E /* LaunchScreen.storyboard */; };
 		4201DA832B1F6C28002A203E /* SpotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA822B1F6C28002A203E /* SpotCell.swift */; };
 		4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201DA862B1F7589002A203E /* DetailSpotViewController.swift */; };
+		664098472B2B1D090050D94B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664098462B2B1D090050D94B /* SignInView.swift */; };
+		664098492B2B54280050D94B /* MonUIViewControllerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664098482B2B54280050D94B /* MonUIViewControllerWrapper.swift */; };
+		668562322B2C47D600370D39 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668562312B2C47D600370D39 /* SwiftUIView.swift */; };
 		C896723D2B276AF6004D489C /* AirtableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896723C2B276AF6004D489C /* AirtableData.swift */; };
 		C89672402B276B98004D489C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896723F2B276B98004D489C /* NetworkManager.swift */; };
 		C89672442B29BCC3004D489C /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89672432B29BCC3004D489C /* FinalView.swift */; };
@@ -32,6 +35,10 @@
 		4201DA7C2B1F686E002A203E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4201DA822B1F6C28002A203E /* SpotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotCell.swift; sourceTree = "<group>"; };
 		4201DA862B1F7589002A203E /* DetailSpotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpotViewController.swift; sourceTree = "<group>"; };
+		664098452B2B1A450050D94B /* SeaSwiftAndSun-Simplon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SeaSwiftAndSun-Simplon.entitlements"; sourceTree = "<group>"; };
+		664098462B2B1D090050D94B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		664098482B2B54280050D94B /* MonUIViewControllerWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonUIViewControllerWrapper.swift; sourceTree = "<group>"; };
+		668562312B2C47D600370D39 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		C896723C2B276AF6004D489C /* AirtableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtableData.swift; sourceTree = "<group>"; };
 		C896723F2B276B98004D489C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C89672432B29BCC3004D489C /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		4201DA6D2B1F686B002A203E /* SeaSwiftAndSun-Simplon */ = {
 			isa = PBXGroup;
 			children = (
+				664098452B2B1A450050D94B /* SeaSwiftAndSun-Simplon.entitlements */,
 				C896723B2B276AE0004D489C /* Model */,
 				4201DA852B1F756D002A203E /* Views */,
 				4201DA842B1F7561002A203E /* Controllers */,
@@ -96,7 +104,10 @@
 			children = (
 				4201DA822B1F6C28002A203E /* SpotCell.swift */,
 				C89672432B29BCC3004D489C /* FinalView.swift */,
+				664098482B2B54280050D94B /* MonUIViewControllerWrapper.swift */,
 				C89672452B29BCC8004D489C /* MapView.swift */,
+				664098462B2B1D090050D94B /* SignInView.swift */,
+				668562312B2C47D600370D39 /* SwiftUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,8 +193,11 @@
 			files = (
 				4201DA872B1F7589002A203E /* DetailSpotViewController.swift in Sources */,
 				4201DA732B1F686B002A203E /* ViewController.swift in Sources */,
+				668562322B2C47D600370D39 /* SwiftUIView.swift in Sources */,
+				664098492B2B54280050D94B /* MonUIViewControllerWrapper.swift in Sources */,
 				4201DA6F2B1F686B002A203E /* AppDelegate.swift in Sources */,
 				C89672402B276B98004D489C /* NetworkManager.swift in Sources */,
+				664098472B2B1D090050D94B /* SignInView.swift in Sources */,
 				4201DA712B1F686B002A203E /* SceneDelegate.swift in Sources */,
 				C896723D2B276AF6004D489C /* AirtableData.swift in Sources */,
 				C89672442B29BCC3004D489C /* FinalView.swift in Sources */,
@@ -338,15 +352,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SeaSwiftAndSun-Simplon/SeaSwiftAndSun-Simplon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = L3BMG5RCPH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -368,15 +384,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SeaSwiftAndSun-Simplon/SeaSwiftAndSun-Simplon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
+				DEVELOPMENT_TEAM = L3BMG5RCPH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SeaSwiftAndSun-Simplon/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

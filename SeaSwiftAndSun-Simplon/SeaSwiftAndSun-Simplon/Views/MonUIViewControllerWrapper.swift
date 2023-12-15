@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MonUIViewControllerWrapper: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
-        return UIViewController()
+        let viewControllerList = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "ListCells")
+        return viewControllerList
     }
 
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
